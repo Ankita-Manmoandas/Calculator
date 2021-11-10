@@ -1,0 +1,149 @@
+@media only screen and (max-width: 480px)
+{ #div_calculator 
+  {
+
+  height: 100vh;
+  width: 90%;
+  display: grid;
+  gap: 10px;
+  
+
+    grid-template-areas: "scren scren scren scren"
+    "clear plusmin perc divi"
+    "seven eight nine X"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equalz";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  
+  #div_screen {
+    background-color: cadetblue;
+    grid-area: scren; 
+    font-size: 20px;
+  }
+
+  .calculator_buttons{
+    border-radius: 60%;
+    box-shadow: 5px 5px rgb(108, 153, 172);
+    font-size: 22px;
+
+  }
+  .calculator_buttons:hover {
+    
+    box-shadow: 5px 5px rgb(37, 54, 61);
+  }
+  #clear {
+    grid-area: clear;
+    background-color: lightcyan;
+   
+  }
+
+  #plusminus {
+    
+    background-color: lightcyan;
+    grid-area: plusmin;
+  }
+
+
+  #percentage {
+    grid-area: perc;
+    background-color: lightcyan;
+   
+  }
+
+  #divide {
+    grid-area: divi;
+    background-color: lightcyan;
+  
+  }
+
+  #seven {
+    grid-area: seven;
+    background-color: lightcyan;
+    
+  }
+  
+  #eight {
+    grid-area: eight;
+    background-color: lightcyan;
+   
+
+  }
+
+  #nine {
+    grid-area: nine;
+    background-color: lightcyan;
+   
+  }
+  #x {
+    grid-area: X;
+    background-color: lightcyan;
+    
+  }
+  #four {
+    grid-area: four;
+    background-color: lightcyan;
+    
+  }
+  #five {
+    grid-area: five;
+    background-color: lightcyan;
+    
+  }
+  
+  #six {
+    grid-area: six;
+    background-color: lightcyan;
+    
+  }
+  #minus {
+    grid-area: minus;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  #one {
+    grid-area: one;
+    background-color: lightcyan;
+   
+  }
+  #two {
+    grid-area: two;
+    background-color: lightcyan;
+    
+  }
+  #three {
+    grid-area: three;
+    background-color: lightcyan;
+   
+  }
+
+  #plus {
+    grid-area: plus;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  
+  #zero {
+    grid-area: zero;
+    background-color: lightcyan;
+    border: black 2px solid;
+    border-radius: 30%;
+  }
+
+  #dot {
+    grid-area: dot;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  
+  #equal {
+    grid-area: equalz;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  
+  
+}
+}

@@ -1,0 +1,106 @@
+@media only screen and (max-width: 480px) {
+  #div_calculator {
+    height: 100vh;
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "scren scren scren scren" "clear plusmin perc divi" "seven eight nine X" "four five six minus" "one two three plus" "zero zero dot equalz";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #div_calculator #div_screen {
+    background-color: cadetblue;
+    grid-area: scren;
+    font-size: 20px;
+  }
+  #div_calculator .calculator_buttons {
+    border-radius: 60%;
+    box-shadow: 5px 5px #6c99ac;
+    font-size: 22px;
+  }
+  #div_calculator .calculator_buttons:hover {
+    box-shadow: 5px 5px #25363d;
+  }
+  #div_calculator #clear {
+    grid-area: clear;
+    background-color: lightcyan;
+  }
+  #div_calculator #plusminus {
+    background-color: lightcyan;
+    grid-area: plusmin;
+  }
+  #div_calculator #percentage {
+    grid-area: perc;
+    background-color: lightcyan;
+  }
+  #div_calculator #divide {
+    grid-area: divi;
+    background-color: lightcyan;
+  }
+  #div_calculator #seven {
+    grid-area: seven;
+    background-color: lightcyan;
+  }
+  #div_calculator #eight {
+    grid-area: eight;
+    background-color: lightcyan;
+  }
+  #div_calculator #nine {
+    grid-area: nine;
+    background-color: lightcyan;
+  }
+  #div_calculator #x {
+    grid-area: X;
+    background-color: lightcyan;
+  }
+  #div_calculator #four {
+    grid-area: four;
+    background-color: lightcyan;
+  }
+  #div_calculator #five {
+    grid-area: five;
+    background-color: lightcyan;
+  }
+  #div_calculator #six {
+    grid-area: six;
+    background-color: lightcyan;
+  }
+  #div_calculator #minus {
+    grid-area: minus;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  #div_calculator #one {
+    grid-area: one;
+    background-color: lightcyan;
+  }
+  #div_calculator #two {
+    grid-area: two;
+    background-color: lightcyan;
+  }
+  #div_calculator #three {
+    grid-area: three;
+    background-color: lightcyan;
+  }
+  #div_calculator #plus {
+    grid-area: plus;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  #div_calculator #zero {
+    grid-area: zero;
+    background-color: lightcyan;
+    border: black 2px solid;
+    border-radius: 30%;
+  }
+  #div_calculator #dot {
+    grid-area: dot;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+  #div_calculator #equal {
+    grid-area: equalz;
+    background-color: lightcyan;
+    border: black 2px solid;
+  }
+}
