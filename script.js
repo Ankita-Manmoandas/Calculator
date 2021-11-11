@@ -15,12 +15,12 @@ let screenDigits;
 //display numbers on screen 
 numbers.forEach((numb)=> {
   numb.addEventListener ("click", (event) => {
-    if (operation) {
+    if (screenDisplay.innerHTML==operation) {
     screenDisplay.innerHTML= "";
   }
   
-  let digit= event.target.value;
-  screenDisplay.innerHTML += digit; 
+  let digits= event.target.value;
+  screenDisplay.innerHTML += digits; 
   
 })} )
 
@@ -58,8 +58,8 @@ if ( operation == "+") {
 clearcommand.addEventListener ("click", () =>
 {
   screenDisplay.innerHTML= "";
-  firstNum="";
-  secondNum=""; 
+  firstNum=" ";
+  secondNum=" "; 
 }) 
 
 
