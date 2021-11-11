@@ -14,12 +14,12 @@ var screenDigits; //display numbers on screen
 
 numbers.forEach(function (numb) {
   numb.addEventListener("click", function (event) {
-    if (operation) {
+    if (screenDisplay.innerHTML == operation) {
       screenDisplay.innerHTML = "";
     }
 
-    var digit = event.target.value;
-    screenDisplay.innerHTML += digit;
+    var digits = event.target.value;
+    screenDisplay.innerHTML += digits;
   });
 }); // display operators + firstnumber 
 
@@ -47,8 +47,8 @@ equals.addEventListener("click", function () {
 
 clearcommand.addEventListener("click", function () {
   screenDisplay.innerHTML = "";
-  firstNum = "";
-  secondNum = "";
+  firstNum = " ";
+  secondNum = " ";
 }); // plusminus
 
 plusminuscommand.addEventListener("click", function () {
