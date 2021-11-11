@@ -1,5 +1,6 @@
 
 const screenDisplay = document.querySelector ("#div_screen")
+const secondDisplay= document.querySelector ("#div_second_screen")
 
 let numbers= document.querySelectorAll (".number")
 const operators= document.querySelectorAll (".operator")
@@ -30,6 +31,7 @@ operators.forEach ((ops) => {
   ops.addEventListener ("click", (event) => {
 operation = event.target.value;
 firstNum= screenDisplay.innerHTML;
+secondDisplay.innerHTML= (firstNum) + " " + (operation);
 screenDisplay.innerHTML=operation; 
   })}) 
 
@@ -38,7 +40,10 @@ screenDisplay.innerHTML=operation;
   
 equals.addEventListener ("click", () =>
 {
-  secondNum= screenDisplay.innerHTML; // 
+ 
+  secondNum= screenDisplay.innerHTML;
+  secondDisplay.innerHTML= (firstNum) + " " + (operation) +  " " + (secondNum);
+   // 
 
 if ( operation == "+") {
   screenDisplay.innerHTML = parseFloat(firstNum) + parseFloat (secondNum) 
@@ -60,6 +65,8 @@ clearcommand.addEventListener ("click", () =>
   screenDisplay.innerHTML= "";
   firstNum=" ";
   secondNum=" "; 
+  secondDisplay.innerHTML = ""; 
+  
 }) 
 
 

@@ -19,17 +19,17 @@ body {
       background-position: 0% 50%;
   }
 }
-h2 {
+// h2 {
   
-  height: 100px;
-  width: 500px;
-  font-size: 40px;
-  font-family: 'Zen Antique', serif;
-  line-height: 100px;
-  margin: auto;
-  text-align: center;
-  margin-top: 50px;
-}
+//   height: 100px;
+//   width: 500px;
+//   font-size: 40px;
+//   font-family: 'Zen Antique', serif;
+//   line-height: 100px;
+//   margin: auto;
+//   text-align: center;
+//   margin-top: 50px;
+// }
 @media only screen and (max-width: 480px)
 { #div_calculator 
   {
@@ -43,12 +43,10 @@ h2 {
   background-color: #1C1C1C;
   text-align: right;
   cursor: pointer;
-  
 
 
-  
-
-    grid-template-areas: "scren scren scren scren"
+    grid-template-areas: "topscren topscren topscren topscren"
+    "scren scren scren scren"
     "clear plusmin perc divi"
     "seven eight nine X"
     "four five six minus"
@@ -56,13 +54,24 @@ h2 {
     "zero zero dot equalz";
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+
+  #div_second_screen {
+    background-color: #dc8787; 
+    grid-area: topscren; 
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    height: 50px;
+    width:100%;
+
+  }
   
   #div_screen {
-    background-color: #1C1C1C; 
+    background-color: #703d3d; 
     grid-area: scren; 
     font-size: 80px;
-    color: white;
+    color: rgb(169, 169, 169);
     text-align: right;
     
     
@@ -215,30 +224,41 @@ h2 {
   text-align: right;
   border-radius: 10%;
   margin-top: 100px;
-  
-  
 
- 
-  
+  grid-template-areas: "topscren topscren topscren topscren"
+  "scren scren scren scren"
+  "clear plusmin perc divi"
+  "seven eight nine X"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equalz";
 
-    grid-template-areas: "scren scren scren scren"
-    "clear plusmin perc divi"
-    "seven eight nine X"
-    "four five six minus"
-    "one two three plus"
-    "zero zero dot equalz";
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+#div_second_screen {
+  background-color: $primary-color; 
+  border-radius: 20%;
+  grid-area: topscren; 
+  font-size:  22px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  height: 50px;
+  width:100%;
+  line-height: 50px;
+  padding-right: 10px;
+
+}
+
+#div_screen {
+  background-color: #1C1C1C; 
+  grid-area: scren; 
+  font-size: 60px;
+  color: white;
+  text-align: right;
   
-  #div_screen {
-    background-color: #1C1C1C; 
-    
-    grid-area: scren; 
-    font-size: 80px;
-    color: white;
-    border-radius: 10%;
-  }
+  
+}
 
   .calculator_buttons{
     border-radius: 60%;

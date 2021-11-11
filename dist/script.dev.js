@@ -1,6 +1,7 @@
 "use strict";
 
 var screenDisplay = document.querySelector("#div_screen");
+var SecondDisplay = document.querySelector("#div_second_screen");
 var numbers = document.querySelectorAll(".number");
 var operators = document.querySelectorAll(".operator");
 var equals = document.querySelector(".equals");
@@ -27,6 +28,7 @@ operators.forEach(function (ops) {
   ops.addEventListener("click", function (event) {
     operation = event.target.value;
     firstNum = screenDisplay.innerHTML;
+    SecondDisplay.innerHTML = firstNum + operation;
     screenDisplay.innerHTML = operation;
   });
 }); // now we need to add second number
