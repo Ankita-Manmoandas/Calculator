@@ -1,12 +1,13 @@
 @media only screen and (max-width: 480px) {
   #div_calculator {
-    height: 70vh;
-    width: 70%;
+    height: 60vh;
+    width: 50%;
     display: grid;
     gap: 10px;
     border: 2px solid black;
     padding: 20px;
     background-color: #1C1C1C;
+    text-align: right;
     grid-template-areas: "scren scren scren scren" "clear plusmin perc divi" "seven eight nine X" "four five six minus" "one two three plus" "zero zero dot equalz";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
@@ -16,6 +17,126 @@
     grid-area: scren;
     font-size: 80px;
     color: white;
+    text-align: right;
+  }
+  #div_calculator .calculator_buttons {
+    border-radius: 60%;
+    color: white;
+    font-size: 22px;
+  }
+  #div_calculator .calculator_buttons:hover {
+    box-shadow: 5px 5px #25363d;
+  }
+  #div_calculator #clear {
+    grid-area: clear;
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+  }
+  #div_calculator #plusminus {
+    background-color: #D4D4D2;
+    grid-area: plusmin;
+    color: #1C1C1C;
+  }
+  #div_calculator #percentage {
+    grid-area: perc;
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+  }
+  #div_calculator #divide {
+    grid-area: divi;
+    background-color: #FF9500;
+  }
+  #div_calculator #seven {
+    grid-area: seven;
+    background-color: #505050;
+  }
+  #div_calculator #eight {
+    grid-area: eight;
+    background-color: #505050;
+  }
+  #div_calculator #nine {
+    grid-area: nine;
+    background-color: #505050;
+  }
+  #div_calculator #x {
+    grid-area: X;
+    background-color: #FF9500;
+  }
+  #div_calculator #four {
+    grid-area: four;
+    background-color: #505050;
+  }
+  #div_calculator #five {
+    grid-area: five;
+    background-color: #505050;
+  }
+  #div_calculator #six {
+    grid-area: six;
+    background-color: #505050;
+  }
+  #div_calculator #minus {
+    grid-area: minus;
+    background-color: #FF9500;
+    border: black 2px solid;
+  }
+  #div_calculator #one {
+    grid-area: one;
+    background-color: #505050;
+  }
+  #div_calculator #two {
+    grid-area: two;
+    background-color: #505050;
+  }
+  #div_calculator #three {
+    grid-area: three;
+    background-color: #505050;
+  }
+  #div_calculator #plus {
+    grid-area: plus;
+    background-color: #FF9500;
+    border: black 2px solid;
+  }
+  #div_calculator #zero {
+    grid-area: zero;
+    background-color: #505050;
+    border: black 2px solid;
+    border-radius: 30%;
+  }
+  #div_calculator #dot {
+    grid-area: dot;
+    background-color: #505050;
+    border: black 2px solid;
+  }
+  #div_calculator #equal {
+    grid-area: equalz;
+    background-color: #FF9500;
+    border: black 2px solid;
+  }
+}
+@media only screen and (min-width: 481px) {
+  #div_calculator {
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    border: 2px solid #FF9500;
+    padding: 20px;
+    background-color: #1C1C1C;
+    box-shadow: 5px 5px rgba(196, 190, 190, 0.578);
+    text-align: right;
+    border-radius: 10%;
+    margin-top: 100px;
+    grid-template-areas: "scren scren scren scren" "clear plusmin perc divi" "seven eight nine X" "four five six minus" "one two three plus" "zero zero dot equalz";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #div_calculator #div_screen {
+    background-color: #1C1C1C;
+    grid-area: scren;
+    font-size: 80px;
+    color: white;
+    border-radius: 10%;
   }
   #div_calculator .calculator_buttons {
     border-radius: 60%;
