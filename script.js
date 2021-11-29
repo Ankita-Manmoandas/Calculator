@@ -30,7 +30,7 @@ numbers.forEach((numb)=> {
 operators.forEach ((ops) => {
   ops.addEventListener ("click", (event) => {
 operation = event.target.value;
-firstNum= screenDisplay.innerHTML;
+firstNum= screenDisplay.innerHTML
 secondDisplay.innerHTML= (firstNum) + " " + (operation);
 screenDisplay.innerHTML=operation; 
   })}) 
@@ -39,12 +39,12 @@ screenDisplay.innerHTML=operation;
   // now we need to add second number
   
 equals.addEventListener ("click", () =>
-{
- 
-  secondNum= screenDisplay.innerHTML;
-  secondDisplay.innerHTML= (firstNum) + " " + (operation) +  " " + (secondNum);
-   // 
-
+ {secondNum= screenDisplay.innerHTML;
+  if (screenDisplay.innerHTML == "") {
+    secondDisplay.innerHTML == "";
+  } else {secondDisplay.innerHTML= (firstNum) + " " + (operation) +  " " + (secondNum);
+  }
+   
 if ( operation == "+") {
   screenDisplay.innerHTML = parseFloat(firstNum) + parseFloat (secondNum) 
 } else if ( operation == "-") {
@@ -56,6 +56,7 @@ if ( operation == "+") {
   else if (operation == "x") {
     screenDisplay.innerHTML = parseFloat(firstNum) * parseFloat (secondNum)
   }
+
 })  
 
 //clear button
@@ -63,12 +64,13 @@ if ( operation == "+") {
 clearcommand.addEventListener ("click", () =>
 {
   screenDisplay.innerHTML= "";
-  firstNum=" ";
-  secondNum=" "; 
-  secondDisplay.innerHTML = ""; 
+  firstNum="";
+  secondNum=""; 
+  secondDisplay.innerHTML = "";
+  operation=""; 
   
 }) 
-
+ 
 
 // plusminus
 plusminuscommand.addEventListener ("click", () => {
@@ -87,7 +89,7 @@ percentagecommand.addEventListener ("click", () => {
   screenDisplay.innerHTML= screenDigits / (100)}
 
 )
-
+// limit screen display to 10 digits for first and second numbers. 
 
 // {
 //   if (firstNum > 0) 
