@@ -40,7 +40,6 @@ screenDisplay.innerHTML=operation;
   // now we need to add second number
   
 const calculateResult= (operation) => {
-
 if ( operation == "+") {
   return parseFloat(firstNum) + parseFloat(secondNum)
   } else if ( operation == "-") {
@@ -50,23 +49,23 @@ if ( operation == "+") {
   }
   else if (operation == "x") {
     return parseFloat(firstNum) * parseFloat (secondNum)
+  } else if (operation== "") {
+    return firstNum
   }
 }
 
 equals.addEventListener("click", ()  => {
-  secondNum= screenDisplay.innerHTML;
-{ 
-  if 
-  (screenDisplay.innerHTML == "") {
-  secondDisplay.innerHTML == "";
-  } else
-  { secondDisplay.innerHTML= (firstNum) + " " + (operation) +  " " + (secondNum) 
+  secondNum = screenDisplay.innerHTML
+  if (screenDisplay.innerHTML== "") {
+    secondDisplay.innerHTML= ""
+  } else if (secondNum==operation) {
+    screenDisplay.innerHTML=""
+    } else {
+   secondDisplay.innerHTML= (firstNum) + " " + (operation) +  " " + (secondNum) 
+   screenDisplay.innerHTML= calculateResult(operation) 
   }
-   secondNum = screenDisplay.innerHTML;
-      screenDisplay.innerHTML= calculateResult(operation)
 
-
-}})
+})
 
 //clear button
 
